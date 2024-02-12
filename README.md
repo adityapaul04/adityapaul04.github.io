@@ -40,5 +40,3 @@ Aditya Paul
 ## Contact
 
 adit.ya.paul0499@gmail.com
-
-[Aditya Paul's Portfolio Website](adityapaul04.github.io)
