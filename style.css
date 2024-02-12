@@ -575,7 +575,8 @@ h6 {
         justify-content: center;
     }
 
-    .contact input, .contact textarea {
+    .contact input,
+    .contact textarea {
         width: 70%;
         padding: 15px;
         border: 0;
@@ -586,7 +587,7 @@ h6 {
 
 
 @media (max-width: 700px) {
-    header nav{
+    header nav {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -599,7 +600,15 @@ h6 {
         top: -500px;
     }
 
-    .right ul{
+    .leftSection {
+        font-size: 1.5rem;
+    }
+
+    .leftSection .btn {
+        margin-top: 10px;
+    }
+
+    .right ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -622,20 +631,20 @@ h6 {
         display: block;
     }
 
-    .leftSection {
-        font-size: 2rem;
-    }
-
 
 
     @media (max-width: 450px) {
         .leftSection {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .leftSection .btn {
             padding: 7px;
             font-size: 10px;
+        }
+
+        .rightSection {
+            width: 50%
         }
 
         .secondSection .about-content h2 {
