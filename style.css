@@ -22,6 +22,14 @@ nav {
     height: 8vh;
 }
 
+.close {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
 .left {
     font-size: 1.5rem;
     font-weight: 500;
@@ -536,4 +544,130 @@ h6 {
 
 .copyright {
     font-size: 12px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1200px) {
+    .project {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .skill-category {
+        background: linear-gradient(45deg, black, #000000, #000000, black, black, #fed700);
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        height: max-content;
+        transition: transform 0.3s ease;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-skills .skillContainer {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact input, .contact textarea {
+        width: 70%;
+        padding: 15px;
+        border: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    header nav{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    header {
+        position: absolute;
+        top: -500px;
+    }
+
+    .right ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        display: block;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+
+
+    @media (max-width: 450px) {
+        .leftSection {
+            font-size: 1.5rem;
+        }
+
+        .leftSection .btn {
+            padding: 7px;
+            font-size: 10px;
+        }
+
+        .secondSection .about-content h2 {
+            font-size: 30px;
+        }
+
+        .secondSection .about-content p {
+            font-size: 16px;
+        }
+
+        .edu-experience {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px;
+        }
+
+        .project-title h2 {
+            font-size: 30px;
+        }
+
+        .project-title p {
+            color: #e5e5e5;
+            font-size: 16px;
+        }
+
+        .timeline {
+            width: 200%;
+        }
+
+        .service-container {
+            margin: 30px;
+            text-align: center;
+        }
+    }
 }
